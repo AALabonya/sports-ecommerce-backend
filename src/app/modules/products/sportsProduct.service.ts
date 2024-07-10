@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import { TProduct } from './sportsProduct.interface';
 import { Product } from './sportsProduct.model';
 
@@ -26,10 +27,22 @@ const updateProductIntoDB = async (id: string, payload: Partial<TProduct>) => {
   });
   return result;
 };
+//delete product
 
+const deleteProductById = async (id: string) => {
+  console.log(id);
+
+  const result = await Product.findOneAndDelete({
+    _id: new Types.ObjectId(id),
+  });
+  console.log(result);
+
+  return result;
+};
 export const ProductServices = {
   createProductIntoDB,
   getAllProductFromDB,
   getSingleProductFromDB,
   updateProductIntoDB,
+  deleteProductById,
 };
