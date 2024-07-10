@@ -3,11 +3,7 @@ import { TProduct } from './sportsProduct.interface';
 import { Product } from './sportsProduct.model';
 
 const createProductIntoDB = async (payload: TProduct) => {
-  console.log(payload);
-
   const result = await Product.create(payload);
-  console.log(result);
-
   return result;
 };
 
@@ -30,12 +26,9 @@ const updateProductIntoDB = async (id: string, payload: Partial<TProduct>) => {
 //delete product
 
 const deleteProductById = async (id: string) => {
-  console.log(id);
-
   const result = await Product.findOneAndDelete({
     _id: new Types.ObjectId(id),
   });
-  console.log(result);
 
   return result;
 };

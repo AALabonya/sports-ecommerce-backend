@@ -2,8 +2,6 @@ import { Request, Response } from 'express';
 import { ProductServices } from './sportsProduct.service';
 
 const createProduct = async (req: Request, res: Response) => {
-  console.log(req.body);
-
   const result = await ProductServices.createProductIntoDB(req.body);
   res.json({
     success: true,
@@ -45,7 +43,6 @@ const deleteProduct = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
     const result = await ProductServices.deleteProductById(id);
-    console.log(id);
 
     res.json({
       success: true,
