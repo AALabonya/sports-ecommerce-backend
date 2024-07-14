@@ -1,6 +1,6 @@
 ## Sports shop E-commerce Project Overview
 
-### Overview
+### Introduction
 
 FitPro is a dynamic e-commerce platform tailored for sporting goods enthusiasts, offering an extensive selection of equipment and accessories for various sports. It provides a user-friendly interface that allows customers to easily browse, purchase, and manage their sporting goods
 
