@@ -11,27 +11,27 @@
 
 # API Endpoints:
 
-## Product Management
+## Product Routes
 
 Create a New Product
 
 - Endpoint: /api/v1/products
 - Method: POST
 
-Retrieve a List of All Products
+Get All Products
 
 - Endpoint: /api/v1/products
 - Method: GET
 
-Retrieve a Specific Product by ID
+Get a Specific Product by ID
 
 - Endpoint: /api/v1/products/:productId
 - Method: GET
 
-Update Product Information
+Update Product
 
 - Endpoint: /api/v1/products/:id
-- Method: PUT
+- Method: PATCH
 
 Delete a Product
 

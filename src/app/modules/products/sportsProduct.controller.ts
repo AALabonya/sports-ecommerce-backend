@@ -3,7 +3,6 @@ import { ProductServices } from './sportsProduct.service';
 
 const createProduct = async (req: Request, res: Response) => {
   const result = await ProductServices.createProductIntoDB(req.body);
-  console.log(result);
 
   res.json({
     success: true,
