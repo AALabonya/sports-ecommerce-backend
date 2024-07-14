@@ -1,7 +1,1 @@
-export const SearchableFields = [
-  'email',
-  'name',
-  'description',
-  'category',
-  'brand',
-];
+export const SearchableFields = ['name', 'category', 'brand'];
