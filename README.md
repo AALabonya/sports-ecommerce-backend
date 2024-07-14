@@ -80,4 +80,4 @@ npm run start:dev
 
 The server will start running on http://localhost:5000.
 
-Live Server Link:
+Live Server Link: https://sports-ecommerce-backend.vercel.app/

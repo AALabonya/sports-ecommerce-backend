@@ -25,7 +25,7 @@ class QueryBuilder<T> {
   }
 
   filter() {
-    const queryObject = { ...this.query }; //copied query for deleting
+    const queryObject = { ...this.query };
 
     //filtering
     const excludeFields = ['searchTerm', 'sort', 'limit', 'page', 'fields'];
@@ -39,11 +39,11 @@ class QueryBuilder<T> {
 
   sort() {
     const sort =
-      (this?.query?.sort as string)?.split(',')?.join(' ') || '-createdAt'; // Default sort by createdAt if no sort query provided
+      (this?.query?.sort as string)?.split(',')?.join(' ') || '-createdAt';
 
     // Check if sorting by price is requested
     if (sort.includes('price')) {
-      const sortOrder = sort.startsWith('-') ? -1 : 1; // Determine ascending (1) or descending (-1) order
+      const sortOrder = sort.startsWith('-') ? -1 : 1;
       this.modelQuery = this.modelQuery.sort({ price: sortOrder });
     } else {
       this.modelQuery = this.modelQuery.sort(sort);
