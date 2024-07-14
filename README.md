@@ -1,5 +1,9 @@
 ## Sports shop E-commerce Project Overview
 
+### Overview
+
+FitPro is a dynamic e-commerce platform tailored for sporting goods enthusiasts, offering an extensive selection of equipment and accessories for various sports. It provides a user-friendly interface that allows customers to easily browse, purchase, and manage their sporting goods
+
 ## Technology Used
 
 - Typescript
@@ -43,7 +47,7 @@ Search for a Product
 - Endpoint: /api/products?searchTerm=name
 - Method: GET
 
-## Order Management
+## Order routes
 
 Create a New Order
 
@@ -72,7 +76,7 @@ DATABASE_URL=< mongodb-uri >
 
 Start the Server
 
-npm start
+npm run start:dev
 
 The server will start running on http://localhost:5000.
 
